@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vibe coding tools </title>
+   <style>
+       :root {
+           --bg-color: #fff;
+           --text-color: #333;
+           --accent-color: #666;
+       }
+       
+       @media (prefers-color-scheme: dark) {
+           :root {
+               --bg-color: #1a1a1a;
+               --text-color: #e5e5e5;
+               --accent-color: #a0a0a0;
+           }
+       }
+       
+       [data-theme="dark"] {
+           --bg-color: #1a1a1a;
+           --text-color: #e5e5e5;
+           --accent-color: #a0a0a0;
+       }
+       
+       [data-theme="light"] {
+           --bg-color: #fff;
+           --text-color: #333;
+           --accent-color: #666;
+       }
+       
+       * { transition: background-color 0.3s ease, color 0.3s ease; }
+       
+       body {
+           font-family: -apple-system, system-ui, sans-serif;
+           line-height: 1.6;
+           max-width: 650px;
+           margin: 40px auto;
+           padding: 0 10px;
+           color: var(--text-color);
+           background: var(--bg-color);
+       }
+       
+       a { color: var(--text-color); }
+       
+       img {
+           max-width: 100%;
+           height: auto;
+           display: block;
+           margin: 20px auto;
+           border-radius: 8px;
+           loading: lazy;
+       }
+       
+       .theme-toggle {
+           position: fixed;
+           top: 20px;
+           right: 20px;
+           background: var(--bg-color);
+           border: 1px solid var(--accent-color);
+           color: var(--text-color);
+           padding: 8px 12px;
+           border-radius: 6px;
+           cursor: pointer;
+           font-size: 14px;
+       }
+       
+       .theme-toggle:hover {
+           opacity: 0.8;
+       }
+       
+       pre {
+           background: var(--accent-color);
+           color: var(--bg-color);
+           padding: 16px;
+           border-radius: 6px;
+           overflow-x: auto;
+       }
+       
+       code {
+           background: var(--accent-color);
+           color: var(--bg-color);
+           padding: 2px 6px;
+           border-radius: 3px;
+           font-size: 0.9em;
+       }
+       
+       blockquote {
+           border-left: 3px solid var(--accent-color);
+           margin: 0;
+           padding-left: 20px;
+           font-style: italic;
+           color: var(--accent-color);
+       }
+   </style>
+</head>
+<body>
+   <button class="theme-toggle" onclick="toggleTheme()">◑</button>
+   <a href="./">← Back</a>
+   <h1>Vibe coding tools </h1>
+   <h2>The Vibe coding Full fledge IDEs —</h2>
+<ul>
+<li>Cursor</li>
+<li>Windsuf</li>
+<li>Trae</li>
+<li>Kiro by Amazon</li>
+<li><a href="http://teta.so/">Teta.so</a> (Flutter based only)</li>
+<li>Replit (Web Based AI Agentic)</li>
+<li>Void</li>
+<li>Qoder (Agentic IDE)</li>
+<li>Zed AI(paid)</li>
+<li>Wrap (Terminal)</li>
+<li>PearAI</li>
+<li><a href="https://pieces.app/">https://pieces.app/</a></li>
+</ul>
+<hr>
+<ul>
+<li>Emergent.sh</li>
+<li>Rocket.new</li>
+<li>Google AI studio/Build</li>
+<li>Firebase Studio by Google (Specific for the AI apps)</li>
+<li><a href="http://jules.google/">Jules.google</a> (AI Agent)</li>
+<li>Void IDE (editor)</li>
+<li>V0.dev</li>
+<li>lovabale.dev</li>
+<li>bolt.new</li>
+<li>Cove.ai</li>
+<li>Blink.new</li>
+<li>youware.so</li>
+</ul>
+<hr>
+<h2>Browser Based - Intelligent and Website Makers</h2>
+<ul>
+<li>Tempo Labs</li>
+<li>Wegic</li>
+<li>Deepsite</li>
+<li>Ohara.ai</li>
+<li>llamacoder (Together.ai demos)</li>
+<li>websim</li>
+<li>Marbilism</li>
+<li>Sutro AI (Waitlist)</li>
+<li>Databutton</li>
+<li>softgenai</li>
+<li>Mocha</li>
+<li>bloom.diy</li>
+<li>devv.ai</li>
+<li>cosmic.new</li>
+<li><a href="https://www.createanything.com/">https://www.createanything.com/</a></li>
+<li>Lindy.ai</li>
+<li><a href="https://trickle.so/">https://trickle.so/</a></li>
+<li><a href="https://www.cosmic.new/">https://www.cosmic.new/</a></li>
+<li><a href="https://floot.com/">https://floot.com/</a></li>
+<li><a href="https://www.autocoder.cc/platform">https://www.autocoder.cc/platform</a></li>
+<li><a href="https://www.orchids.app/">https://www.orchids.app/</a></li>
+<li><a href="http://capy.ai/">capy.ai</a></li>
+<li>same.dev</li>
+<li>dreamflow</li>
+<li>von.dev</li>
+<li><a href="http://sweep.dev/">sweep.dev</a></li>
+<li><a href="http://napkins.dev/">Napkins.dev</a></li>
+<li><a href="https://www.robocoder.ai/">https://www.robocoder.ai/</a></li>
+<li><a href="https://www.bldrai.dev/">https://www.bldrai.dev/</a></li>
+<li><a href="http://app.amplication.com/">http://app.amplication.com/</a> (<strong>generates backend code for Node.js and .NET applications</strong>)</li>
+</ul>
+<hr>
+<h2>Some are Mobile App Makers and Assistants</h2>
+<ul>
+<li>C0.dev</li>
+<li>Rork.app</li>
+<li>wasp.sh</li>
+<li>appalchemy.ai</li>
+<li>chef.convex.dev</li>
+<li>Michelangelo.land</li>
+<li>Dyad(open source)</li>
+<li>DreamFlow (flutter only)</li>
+<li>appalchemy.ai</li>
+</ul>
+<hr>
+<h2>Some are Vs code Editors Extentions - Code editors and Assistants</h2>
+<ul>
+<li>Roocode</li>
+<li>Augment code (Advanced)</li>
+<li>Zencoder</li>
+<li>Github Copilot (also use in github)</li>
+<li>Kilo Code</li>
+<li>cline</li>
+<li>Tabnine</li>
+<li>firebender (inside Android Studio)</li>
+<li>Flexpilot</li>
+<li>All hands</li>
+<li><a href="https://purecode.ai/">https://purecode.ai/</a></li>
+<li>Fleet(inside Jetbrains IDE)</li>
+<li>Continue.devontinue</li>
+<li>Codewhisper (Amazon)</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=AlienUI.alienx">Alienx</a> (<strong>AlienX</strong>)</li>
+</ul>
+<hr>
+<h2>LLMS and Chat Assistants</h2>
+<ul>
+<li>Chatgpt</li>
+<li>Claude</li>
+<li>Gemini</li>
+<li>Grok</li>
+<li>Deepseek</li>
+<li>Qwenlm</li>
+<li>Mistral</li>
+<li><a href="http://kimi.so/">Kimi.so</a></li>
+<li>z.ai</li>
+</ul>
+<hr>
+<h2>Agentic Browsers</h2>
+<ul>
+<li>Perplexity</li>
+<li>Fellou</li>
+<li>Flowith.io</li>
+<li>skywork.ai</li>
+<li>genspark</li>
+<li>ManusAI</li>
+<li><a href="https://www.browserbase.com/">https://www.browserbase.com/</a></li>
+<li>Browserfly</li>
+<li>fairies.ai</li>
+<li>convergence.ai</li>
+<li><a href="https://www.superblocks.com/clark">https://www.superblocks.com/clark</a></li>
+<li>Runner H</li>
+<li>Opera Neon</li>
+<li>Fine.dev</li>
+<li>Factory.ai</li>
+</ul>
+<hr>
+<h2>⇒ Make Agents Using Text</h2>
+<ul>
+<li><a href="http://assista.us/">Assista.us</a> - (text to automation)</li>
+<li>sim studio</li>
+<li>usedas.ai</li>
+<li>workflow86</li>
+<li>Expertise AI</li>
+<li>e2b.dev</li>
+<li>sqd.io</li>
+<li>Expertise.ai</li>
+<li>clicklabs.app</li>
+</ul>
+<hr>
+<h1>Other Tools</h1>
+<hr>
+<ul>
+<li>vogent voicelab</li>
+<li>elevenlabs</li>
+<li><a href="https://atypica.ai/">https://atypica.ai/</a></li>
+<li><a href="https://www.weavy.ai/">https://www.weavy.ai/</a></li>
+<li>QuickDesign AI</li>
+<li>openmemory (consistent memory over llms)</li>
+<li><a href="http://superdesign.dev/">superdesign.dev</a></li>
+<li>lovart.ai</li>
+</ul>
+<hr>
+<h2>code debuuggers and fixers</h2>
+<ul>
+<li>Pyrefly (code debugger)</li>
+<li>Figstack</li>
+<li>coderabbit.ai</li>
+<li>getdecipher.com</li>
+</ul>
+
+   <div style="margin-top: 40px; color: var(--accent-color);">
+       Last updated: 9/11/2025
+   </div>
+   
+   <script>
+       function toggleTheme() {
+           const current = document.documentElement.getAttribute('data-theme');
+           const next = current === 'dark' ? 'light' : 'dark';
+           document.documentElement.setAttribute('data-theme', next);
+           localStorage.setItem('theme', next);
+       }
+       
+       // Initialize theme
+       const saved = localStorage.getItem('theme');
+       if (saved) {
+           document.documentElement.setAttribute('data-theme', saved);
+       } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+           document.documentElement.setAttribute('data-theme', 'dark');
+       }
+       
+       // Listen for system theme changes
+       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+           if (!localStorage.getItem('theme')) {
+               document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+           }
+       });
+   </script>
+</body>
+</html>
